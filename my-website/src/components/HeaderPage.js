@@ -1,25 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import RocketImage from '../assets/rocket.png'; // Ensure the path is correct
 
 const HeaderContent = () => {
-  const [scrollingUp, setScrollingUp] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const handleScroll = () => {
-    if (typeof window !== 'undefined') {
-      const currentScrollY = window.scrollY;
-      setScrollingUp(currentScrollY < lastScrollY);
-      setLastScrollY(currentScrollY);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollY]);
-
   return (
     <div
       className="w-full py-16 px-4 sm:py-24 sm:px-6 lg:px-8 flex items-center justify-center"
@@ -54,26 +36,35 @@ const HeaderContent = () => {
           </div>
         </div>
       </div>
-      <div
-        className={`flex-shrink-0 transition-transform duration-300 ${
-          scrollingUp ? 'translate-y-0' : '-translate-y-5'
-        }`}
-      >
+      <div className="flex-shrink-0">
         <img
           src={RocketImage}
           alt="Startup"
-          className={`h-50 w-60 object-cover transition-transform duration-100 ${
-            scrollingUp ? 'translate-y-0' : '-translate-y-60'
-          }`} // Additional animation on the rocket
+          className="h-50 w-60 object-cover rotate-animation" // Automatically rotate
+          style={{
+            animation: 'rotate 5s linear infinite', // Animation for rotation
+          }}
         />
       </div>
+      <style>
+        {`
+          @keyframes rotate {
+            from {
+              transform: rotateY(0deg); /* Start at 0 degrees */
+            }
+            to {
+              transform: rotateY(360deg); /* Complete a full rotation */
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
 
 const HeaderPage = () => {
   return (
-    <div className="bg-gray-50 h-screen overflow-y-scroll">
+    <div className="bg-gray-50 h-screen">
       <HeaderContent />
     </div>
   );
