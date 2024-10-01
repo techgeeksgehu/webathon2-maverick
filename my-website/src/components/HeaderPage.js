@@ -9,7 +9,7 @@ const HeaderContent = () => {
         background: 'linear-gradient(90deg, #CDFFD8, #94B9FF)', // Gradient background
       }}
     >
-      <div className="text-center flex-1">
+      <div className="text-center flex-1 mr-14">
         <h1 className="text-5xl font-extrabold text-gray-900 sm:text-6xl md:text-7xl">
           <span className="block">Launch Your Startup</span>
           <span className="block text-blue-600">With Expert Guidance</span>

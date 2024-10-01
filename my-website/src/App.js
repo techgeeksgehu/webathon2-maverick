@@ -7,6 +7,8 @@ import AddBlogs from './cred/AddBlogs';
 import SiteAnalytics from './cred/Analytics'
 import ResourcePage from './components/ResourcePage'
 import AboutPage from './components/AboutPage'
+import SubmitIdea from './components/SubmitIdea'
+import Gallery from './cred/AddGallery'
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
           <Route path="/SiteAnalytics" element={<SiteAnalytics />} />
           <Route path="/Resource" element={<ResourcePage />} />
           <Route path="/About" element={<AboutPage />} />
+          <Route path='/SubmitIdea' element={<SubmitIdea />} />
+          <Route path='/Gallery' element={<Gallery />} />
 
         </Routes>
 

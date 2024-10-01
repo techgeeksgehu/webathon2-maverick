@@ -41,8 +41,11 @@ export default function Header() {
             <a href="/Resource" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Resource
             </a>
-            <a href="/mentors" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="/Gallery" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Gallery
+            </a>
+            <a href="/SubmitIdea" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              Idea
             </a>
             <a href="/AddBlogs" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Blogs
