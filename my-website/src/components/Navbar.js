@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Rocket, Menu, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
+
+import Logo from '../assets/logo.png'
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -35,7 +38,7 @@ export default function Header() {
             </button>
           </div>
           <nav className="hidden md:flex space-x-10">
-            <a href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="/About" className="text-base font-medium text-gray-500 hover:text-gray-900">
               About
             </a>
             <a href="/Resource" className="text-base font-medium text-gray-500 hover:text-gray-900">
@@ -87,17 +90,23 @@ export default function Header() {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  <a href="/about" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <a href="/About" className="text-base font-medium text-gray-900 hover:text-gray-700">
                     About
                   </a>
-                  <a href="/programs" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Programs
+                  <a href="/Resource" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                    Resource
                   </a>
-                  <a href="/mentors" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Mentors
+                  <a href="/Gallery" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                    Gallery
                   </a>
-                  <a href="/contact" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Contact
+                  <a href="/SubmitIdea" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                    Idea
+                  </a>
+                  <a href="/AddBlogs" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                    Blogs
+                  </a>
+                  <a href="/SiteAnalytics" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                    Analytics
                   </a>
                 </nav>
               </div>

@@ -44,9 +44,9 @@ const StartupIdeaSubmission = () => {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <Lightbulb className="mx-auto h-16 w-16 text-blue-600" />
-          <h1 className="mt-4 text-4xl font-extrabold text-gray-900 sm:text-5xl">
-            Share Your Startup Idea
-          </h1>
+          <h1 className="text-6xl font-extrabold mb-8 text-center"> Share Your Startup Idea</h1>
+           
+          
           <p className="mt-3 text-xl text-gray-500">
             Your idea could be the next big thing! Don't keep it to yourself - share it with us and let's make it a reality together.
           </p>

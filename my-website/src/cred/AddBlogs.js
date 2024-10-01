@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BlogsPage from '../components/BlogPage'
 
+
+
 const BlogForm = ({ blog, onSubmit, onCancel }) => {
   const [formData, setFormData] = useState(blog || {
     title: '',
@@ -134,7 +136,8 @@ const BlogCRUD = () => {
     <Navbar />
     <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-      <h1 className="text-4xl font-extrabold text-center mb-8">Manage Blogs</h1>
+   
+      <h1 className="text-8xl font-extrabold text-center mb-8">Manage Blogs</h1> 
 
       <BlogsPage />
 

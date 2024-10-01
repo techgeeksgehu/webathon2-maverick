@@ -29,19 +29,19 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
-              <li><FooterLink href="/programs">Our Programs</FooterLink></li>
-              <li><FooterLink href="/events">Upcoming Events</FooterLink></li>
-              <li><FooterLink href="/mentors">Mentors</FooterLink></li>
-              <li><FooterLink href="/apply">Apply Now</FooterLink></li>
+              <li><FooterLink href="/">Our Programs</FooterLink></li>
+              <li><FooterLink href="/">Upcoming Events</FooterLink></li>
+              <li><FooterLink href="/">Mentors</FooterLink></li>
+              <li><FooterLink href="/">Apply Now</FooterLink></li>
             </ul>
           </div>
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact Us</h3>
             <address className="text-gray-400 not-italic">
-              123 Innovation Street<br />
-              Tech City, TC 12345<br />
+              Hladwani <br />
+              SCI-Haldwani<br />
               contact@startupincubator.com<br />
-              (123) 456-7890
+              (+91) 1234567890 
             </address>
           </div>
           <div className="space-y-4">

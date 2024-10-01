@@ -2,6 +2,16 @@ import React from 'react'
 import { Calendar, Clock, MapPin } from 'lucide-react'
 import OfficeImage from '../assets/office.jpg'
 
+import Image01 from '../assets/img01.png';
+import Image02 from '../assets/img02.png';
+import Image03 from '../assets/img03.png';
+import Image04 from '../assets/img04.png';
+import Image05 from '../assets/img05.png';
+import Image06 from '../assets/img06.png';
+import Image07 from '../assets/img07.png';
+import Image08 from '../assets/img08.png';
+
+
 const EventCard = ({ title, date, time, location, description, imageUrl, color }) => {
   return (
     <div className={`bg-${color}-100 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl`}>
@@ -41,7 +51,7 @@ const UpcomingEventsPage = () => {
       time: "2:00 PM - 5:00 PM",
       location: "Innovation Hub, Floor 3",
       description: "Showcase your startup idea to a panel of investors and industry experts.",
-      imageUrl: OfficeImage,
+      imageUrl: Image01,
       color: "blue"
     },
     {
@@ -50,7 +60,7 @@ const UpcomingEventsPage = () => {
       time: "10:00 AM - 12:00 PM",
       location: "Tech Center, Room 201",
       description: "Learn how to leverage AI technologies to boost your business operations.",
-      imageUrl: "https://source.unsplash.com/random/800x600?artificial-intelligence",
+      imageUrl: Image02,
       color: "purple"
     },
     {
@@ -59,7 +69,7 @@ const UpcomingEventsPage = () => {
       time: "6:00 PM - 8:00 PM",
       location: "Skyline Lounge",
       description: "Connect with fellow entrepreneurs and potential investors in a casual setting.",
-      imageUrl: "https://source.unsplash.com/random/800x600?networking",
+      imageUrl: Image03,
       color: "green"
     },
     {
@@ -68,8 +78,8 @@ const UpcomingEventsPage = () => {
       time: "1:00 PM - 3:00 PM",
       location: "Finance Building, Auditorium",
       description: "Explore various funding options and strategies for your startup.",
-      imageUrl: "https://source.unsplash.com/random/800x600?finance",
-      color: "yellow"
+      imageUrl: Image04,
+      color: "blue"
     },
     {
       title: "Product Design Workshop",
@@ -77,8 +87,8 @@ const UpcomingEventsPage = () => {
       time: "11:00 AM - 2:00 PM",
       location: "Design Studio, West Wing",
       description: "Learn the principles of effective product design and user experience.",
-      imageUrl: "https://source.unsplash.com/random/800x600?design",
-      color: "pink"
+      imageUrl: Image05,
+      color: "purple"
     },
     {
       title: "Tech Startup Job Fair",
@@ -86,9 +96,36 @@ const UpcomingEventsPage = () => {
       time: "10:00 AM - 4:00 PM",
       location: "Grand Hall, Main Building",
       description: "Connect with talented individuals looking to join innovative startups.",
-      imageUrl: "https://source.unsplash.com/random/800x600?job-fair",
-      color: "indigo"
-    }
+      imageUrl: Image06,
+      color: "green"
+    },
+    {
+      title: "Tech Startup Job Fair",
+      date: "August 19, 2023",
+      time: "10:00 AM - 4:00 PM",
+      location: "Grand Hall, Main Building",
+      description: "Connect with talented individuals looking to join innovative startups.",
+      imageUrl: Image07,
+      color: "blue"
+    },
+    {
+      title: "Tech Startup Job Fair",
+      date: "August 19, 2023",
+      time: "10:00 AM - 4:00 PM",
+      location: "Grand Hall, Main Building",
+      description: "Connect with talented individuals looking to join innovative startups.",
+      imageUrl: Image08,
+      color: "purple"
+    },
+    {
+      title: "Startup Pitch Competition",
+      date: "July 15, 2023",
+      time: "2:00 PM - 5:00 PM",
+      location: "Innovation Hub, Floor 3",
+      description: "Showcase your startup idea to a panel of investors and industry experts.",
+      imageUrl: Image01,
+      color: "green"
+    },
   ]
 
   return (

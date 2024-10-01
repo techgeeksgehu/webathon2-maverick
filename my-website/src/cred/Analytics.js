@@ -1,10 +1,13 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 import { 
   BarChart, Bar, LineChart, Line, PieChart, Pie,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell
 } from 'recharts'
 import { Users, Calendar, Briefcase } from 'lucide-react'
+
+import { ChartArea } from 'lucide-react';
 
 import Navbar from '../components/Navbar'
 
@@ -60,7 +63,8 @@ const SimpleSiteAnalyticsDashboard = () => {
     <>
     <Navbar />
     <div className="bg-gray-100 min-h-screen p-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">SIC Site Analytics</h1>
+    <ChartArea className="mx-auto h-20 w-20 text-red-600" />
+      <h1 className="text-8xl font-extrabold mb-8 text-center">SIC Site Analytics</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <Card title="Total Visitors" value="25,430" icon={Users} />
@@ -116,6 +120,7 @@ const SimpleSiteAnalyticsDashboard = () => {
         </ResponsiveContainer>
       </ChartCard>
     </div>
+    <Footer />
     </>
   )
 }

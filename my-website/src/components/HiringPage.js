@@ -3,6 +3,8 @@ import { Upload, CheckCircle, XCircle } from 'lucide-react'
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+import { SearchCheck } from 'lucide-react';
+
 const InputField = ({ label, type, name, value, onChange, required }) => (
   <div className="mb-4">
     <label htmlFor={name} className="block text-sm font-medium text-gray-700 mb-1">
@@ -60,11 +62,23 @@ const HiringPage = () => {
   return (
     <>
           <Navbar />
+
+          <div className="bg-gray-100 min-h-100 py-12 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+          <SearchCheck className="mx-auto h-20 w-20 text-green-600" />
+          <h1 className="mt-4 text-4xl font-extrabold text-gray-900 sm:text-5xl">
+            We were Eagrly Looking for you
+          </h1>
+          <p className="mt-3 text-xl text-gray-500 mx-auto">
+            Thank You!!! For Making this decision to join Us.
+          </p>
+        </div>
+        </div>
     
-    <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8 mt-0">
       <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
         <div className="px-4 py-5 sm:px-6">
-          <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
+          <h2 className="text-5xl font-bold leading-7 text-gray-900 sm:text-5xl sm:truncate">
             Join Our Team
           </h2>
           <p className="mt-1 max-w-2xl text-sm text-gray-500">

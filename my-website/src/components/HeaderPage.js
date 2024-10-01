@@ -1,6 +1,8 @@
 import React from 'react';
 import RocketImage from '../assets/rocket.png'; // Ensure the path is correct
 
+import Logo from '../assets/logo.png';
+
 const HeaderContent = () => {
   return (
     <div
@@ -12,7 +14,7 @@ const HeaderContent = () => {
       <div className="text-center flex-1 mr-14">
         <h1 className="text-5xl font-extrabold text-gray-900 sm:text-6xl md:text-7xl">
           <span className="block">Launch Your Startup</span>
-          <span className="block text-blue-600">With Expert Guidance</span>
+          <span className="block text-blue-600">With SIC- Haldwani</span>
         </h1>
         <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
           Join our Start-up Incubation Centre and turn your innovative ideas into successful businesses. Get access to mentorship, resources, and a thriving entrepreneurial community.
@@ -36,13 +38,13 @@ const HeaderContent = () => {
           </div>
         </div>
       </div>
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-1">
         <img
-          src={RocketImage}
+          src={Logo}
           alt="Startup"
           className="h-50 w-60 object-cover rotate-animation" // Automatically rotate
           style={{
-            animation: 'rotate 5s linear infinite', // Animation for rotation
+            animation: 'rotate 10s linear infinite', // Animation for rotation
           }}
         />
       </div>
@@ -64,7 +66,7 @@ const HeaderContent = () => {
 
 const HeaderPage = () => {
   return (
-    <div className="bg-gray-50 h-screen">
+    <div className="bg-gray-50 h-300">
       <HeaderContent />
     </div>
   );

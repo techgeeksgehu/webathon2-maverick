@@ -3,6 +3,13 @@ import { ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom';
 
 
+import Image01 from '../assets/back01.png';
+import Image02 from '../assets/back02.png';
+import Image03 from '../assets/back03.png';
+import Image04 from '../assets/back04.png';
+
+
+
 const BlogCard = ({ title, excerpt, author, date, imageUrl }) => (
   <div className="bg-white rounded-lg shadow-md overflow-hidden">
     <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
@@ -35,7 +42,7 @@ const BlogPage = () => {
       excerpt: "Learn the essential strategies that can help your startup thrive in today's competitive market.",
       author: "Jane Doe",
       date: "June 15, 2023",
-      imageUrl: "https://source.unsplash.com/random/800x600?startup"
+      imageUrl: Image01
     },
     {
       id: 2,
@@ -43,7 +50,7 @@ const BlogPage = () => {
       excerpt: "Explore how artificial intelligence is reshaping the business landscape and what it means for entrepreneurs.",
       author: "John Smith",
       date: "June 10, 2023",
-      imageUrl: "https://source.unsplash.com/random/800x600?artificial-intelligence"
+      imageUrl: Image02
     },
     {
       id: 3,
@@ -51,7 +58,7 @@ const BlogPage = () => {
       excerpt: "Discover various funding options available to startups and learn how to pitch to potential investors.",
       author: "Emily Brown",
       date: "June 5, 2023",
-      imageUrl: "https://source.unsplash.com/random/800x600?funding"
+      imageUrl: Image03
     }
   ])
 

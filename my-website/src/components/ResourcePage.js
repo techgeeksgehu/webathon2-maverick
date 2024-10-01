@@ -3,8 +3,14 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import { Book, Users, Lightbulb, DollarSign, Briefcase, Globe } from 'lucide-react'
 
+import { useNavigate } from 'react-router-dom';
+
+
+
 const ResourceCard = ({ icon: Icon, title, description, link }) => {
   const [isHovered, setIsHovered] = useState(false)
+
+ 
 
   return (
     <div 
@@ -28,12 +34,19 @@ const ResourceCard = ({ icon: Icon, title, description, link }) => {
 }
 
 const ResourcePage = () => {
+
+  const navigate = useNavigate();
+  
+const handleNavigation = () => {
+  navigate('/Internship');
+};
+
   return (
     <>
     <Navbar />
     <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-center mb-2">Startup Resources Hub</h1>
+      <h1 className="text-6xl font-extrabold mb-8 text-center"> Share Your Startup Idea</h1>
         <p className="text-xl text-gray-600 text-center mb-12">Empowering your entrepreneurial journey with knowledge and tools</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -78,9 +91,13 @@ const ResourcePage = () => {
         <div className="mt-16 bg-blue-600 text-white rounded-lg p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Accelerate Your Startup?</h2>
           <p className="text-xl mb-6">Join our Startup Incubation Centre and turn your vision into reality.</p>
-          <button className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">
-            Apply Now
-          </button>
+          <button
+              type="button"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-blue bg-white-200 hover:bg-blue-700"
+              onClick={handleNavigation}
+            >
+           Apply Now
+            </button>
         </div>
 
         <div className="mt-16">
